@@ -53,8 +53,8 @@ export default function Slide24() {
         </motion.div>
 
         <motion.div custom={4} variants={itemVariants} initial="hidden" animate="visible">
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'var(--text-muted)', textAlign: 'center' }}>
-            Valentina Bongi · Guadalupe Mendiolaza · UTN 2025
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)', textAlign: 'center', letterSpacing: '0.06em' }}>
+            UTN · Universidad Tecnológica Nacional · 2025
           </p>
         </motion.div>
       </div>

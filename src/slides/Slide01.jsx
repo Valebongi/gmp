@@ -128,42 +128,17 @@ export default function Slide01() {
             Transformación digital del modelo operativo
           </motion.h1>
 
-          {/* Team */}
+          {/* University */}
           <motion.div
             custom={4}
             variants={itemVariants}
             initial="hidden"
             animate="visible"
-            style={{ display: 'flex', flexDirection: 'column', gap: 8 }}
+            style={{ display: 'flex', alignItems: 'center', gap: 10 }}
           >
-            {['Valentina Bongi', 'Guadalupe Mendiolaza'].map((name) => (
-              <div key={name} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <div
-                  style={{
-                    width: 6,
-                    height: 6,
-                    borderRadius: '50%',
-                    background: 'var(--primary)',
-                    flexShrink: 0,
-                  }}
-                />
-                <span
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: 15,
-                    color: 'var(--text-secondary)',
-                    fontWeight: 500,
-                  }}
-                >
-                  {name}
-                </span>
-              </div>
-            ))}
-
-            <div style={{ height: 1, background: 'var(--border)', margin: '10px 0' }} />
-
-            <span style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: 'var(--text-muted)' }}>
-              Universidad Tecnológica Nacional
+            <div style={{ height: 1, width: 32, background: 'var(--border-strong)' }} />
+            <span style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: 'var(--text-muted)', fontWeight: 500 }}>
+              Universidad Tecnológica Nacional · 2025
             </span>
           </motion.div>
 
