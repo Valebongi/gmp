@@ -206,7 +206,7 @@ export default function Slide01() {
             {/* Labels periféricos */}
             <text x="160" y="36" textAnchor="middle" fill="rgba(79,70,229,0.80)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Nutrición</text>
             <text x="277" y="162" textAnchor="start" fill="rgba(5,150,105,0.90)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Salud</text>
-            <text x="36" y="170" textAnchor="end" fill="rgba(220,38,38,0.85)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Familia</text>
+            <text x="6" y="170" textAnchor="start" fill="rgba(220,38,38,0.85)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Familia</text>
             <text x="160" y="272" textAnchor="middle" fill="rgba(217,119,6,0.90)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Educación</text>
           </motion.svg>
         </div>

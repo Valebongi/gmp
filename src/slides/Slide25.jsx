@@ -26,7 +26,7 @@ export default function Slide25() {
           transition={{ delay: 0.4, duration: 0.7 }}
           style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(13px,1.5vw,16px)', color: 'var(--text-muted)', textAlign: 'center' }}
         >
-          Universidad Tecnológica Nacional · 2025
+          Universidad Tecnológica Nacional · 2026
         </motion.p>
 
         <motion.div

@@ -132,10 +132,10 @@ export default function Slide09() {
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
             gridTemplateRows: '1fr 1fr',
-            gap: 12,
+            gap: 10,
             width: '100%',
-            maxWidth: 840,
-            flex: 1,
+            maxWidth: 860,
+            maxHeight: 'min(440px, calc(100vh - 180px))',
           }}
         >
           {quadrants.map((q, i) => (
@@ -153,7 +153,7 @@ export default function Slide09() {
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border)',
                 borderRadius: 14,
-                padding: '14px 16px',
+                padding: '12px 14px',
                 boxShadow: 'var(--shadow-card)',
                 overflow: 'hidden',
                 position: 'relative',
