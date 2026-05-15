@@ -194,17 +194,20 @@ export default function Slide01() {
             viewBox="0 0 320 300"
             fill="none"
           >
-            <circle cx="160" cy="110" r="85" fill="rgba(79,70,229,0.06)" stroke="rgba(79,70,229,0.15)" strokeWidth="1.5" />
-            <circle cx="205" cy="155" r="72" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.15)" strokeWidth="1.5" />
-            <circle cx="115" cy="162" r="68" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" strokeWidth="1.5" />
-            <circle cx="160" cy="192" r="62" fill="rgba(245,158,11,0.05)" stroke="rgba(245,158,11,0.12)" strokeWidth="1.5" />
+            {/* Círculos rellenos sólidos */}
+            <circle cx="160" cy="110" r="85" fill="rgba(79,70,229,0.18)" stroke="rgba(79,70,229,0.55)" strokeWidth="2" />
+            <circle cx="205" cy="155" r="72" fill="rgba(5,150,105,0.16)" stroke="rgba(5,150,105,0.55)" strokeWidth="2" />
+            <circle cx="115" cy="162" r="68" fill="rgba(220,38,38,0.14)" stroke="rgba(220,38,38,0.50)" strokeWidth="2" />
+            <circle cx="160" cy="192" r="62" fill="rgba(217,119,6,0.16)" stroke="rgba(217,119,6,0.55)" strokeWidth="2" />
 
-            <text x="160" y="152" textAnchor="middle" fill="rgba(79,70,229,0.55)" fontSize="13" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">CONIN</text>
+            {/* Label central */}
+            <text x="160" y="152" textAnchor="middle" fill="rgba(79,70,229,0.85)" fontSize="16" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="800">CONIN</text>
 
-            <text x="160" y="38" textAnchor="middle" fill="rgba(79,70,229,0.45)" fontSize="9">Nutrición</text>
-            <text x="272" y="160" textAnchor="start" fill="rgba(16,185,129,0.55)" fontSize="9">Salud</text>
-            <text x="42" y="168" textAnchor="end" fill="rgba(239,68,68,0.45)" fontSize="9">Familia</text>
-            <text x="160" y="268" textAnchor="middle" fill="rgba(245,158,11,0.55)" fontSize="9">Educación</text>
+            {/* Labels periféricos */}
+            <text x="160" y="36" textAnchor="middle" fill="rgba(79,70,229,0.80)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Nutrición</text>
+            <text x="277" y="162" textAnchor="start" fill="rgba(5,150,105,0.90)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Salud</text>
+            <text x="36" y="170" textAnchor="end" fill="rgba(220,38,38,0.85)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Familia</text>
+            <text x="160" y="272" textAnchor="middle" fill="rgba(217,119,6,0.90)" fontSize="12" fontFamily="'Plus Jakarta Sans',sans-serif" fontWeight="700">Educación</text>
           </motion.svg>
         </div>
       </div>

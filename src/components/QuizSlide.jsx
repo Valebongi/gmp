@@ -33,13 +33,6 @@ export default function QuizSlide({ questionNumber, question, options }) {
     return 'dim'
   }
 
-  const styleMap = {
-    idle:    { bg: '#FFFFFF', border: '2px solid #CBD5E1', opacity: 1, cursor: 'pointer' },
-    correct: { bg: 'rgba(16,185,129,0.16)', border: '2px solid #10B981', opacity: 1, cursor: 'default' },
-    wrong:   { bg: 'rgba(239,68,68,0.13)', border: '2px solid #EF4444', opacity: 1, cursor: 'default' },
-    dim:     { bg: '#FFFFFF', border: '2px solid #E2E8F0', opacity: 0.38, cursor: 'default' },
-  }
-
   return (
     <div className="slide">
       <BackgroundSystem variant="foda" />
@@ -51,7 +44,6 @@ export default function QuizSlide({ questionNumber, question, options }) {
 
         <motion.div
           custom={0} variants={itemVariants} initial="hidden" animate="visible"
-          style={{ display: 'flex', alignItems: 'center', gap: 12 }}
         >
           <span style={{
             background: 'rgba(79,70,229,0.13)', border: '1.5px solid rgba(79,70,229,0.30)',
@@ -77,7 +69,25 @@ export default function QuizSlide({ questionNumber, question, options }) {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16, width: '100%', maxWidth: 820 }}>
           {options.map((option, i) => {
             const state = getState(option, i)
-            const s = styleMap[state]
+
+            const bgMap = {
+              idle:    '#FFFFFF',
+              correct: 'rgba(5,150,105,0.14)',
+              wrong:   'rgba(220,38,38,0.11)',
+              dim:     '#FFFFFF',
+            }
+            const borderMap = {
+              idle:    '2px solid #D1D5DB',
+              correct: '2px solid #059669',
+              wrong:   '2px solid #DC2626',
+              dim:     '2px solid #E5E7EB',
+            }
+            const shadowMap = {
+              idle:    '0 1px 4px rgba(0,0,0,0.06), 0 8px 24px rgba(79,70,229,0.07)',
+              correct: '0 0 0 5px rgba(5,150,105,0.14), 0 8px 24px rgba(5,150,105,0.10)',
+              wrong:   '0 0 0 4px rgba(220,38,38,0.12)',
+              dim:     '0 1px 4px rgba(0,0,0,0.04)',
+            }
 
             return (
               <motion.div
@@ -85,49 +95,53 @@ export default function QuizSlide({ questionNumber, question, options }) {
                 custom={2 + i}
                 variants={itemVariants}
                 initial="hidden"
+                // Always string "visible" for entrance; game feedback via keyframe objects
                 animate={
                   state === 'correct'
-                    ? { scale: [1, 1.05, 0.97, 1.02, 1], transition: { duration: 0.55, ease: 'easeOut' } }
-                    : state === 'wrong'
-                    ? { x: [0, -12, 12, -9, 9, -5, 5, 0], transition: { duration: 0.5, ease: 'easeOut' } }
-                    : {}
+                    ? { opacity: 1, y: 0, filter: 'blur(0px)', scale: [1, 1.06, 0.97, 1.02, 1] }
+                    : state === 'wrong' && i === selected
+                    ? { opacity: 1, y: 0, filter: 'blur(0px)', x: [0, -12, 12, -9, 9, -5, 5, 0] }
+                    : 'visible'
+                }
+                transition={
+                  state === 'correct'
+                    ? { duration: 0.55, ease: 'easeOut' }
+                    : state === 'wrong' && i === selected
+                    ? { duration: 0.5, ease: 'easeOut' }
+                    : undefined
                 }
                 whileHover={!isAnswered ? { scale: 1.025, y: -2, boxShadow: '0 12px 40px rgba(79,70,229,0.16)' } : {}}
                 onClick={() => handleSelect(i)}
                 style={{
-                  background: s.bg,
-                  border: s.border,
+                  background: bgMap[state],
+                  border: borderMap[state],
                   borderRadius: 14,
                   padding: '20px 24px',
                   display: 'flex',
                   alignItems: 'center',
                   gap: 14,
-                  boxShadow: state === 'correct'
-                    ? '0 0 0 5px rgba(16,185,129,0.14), 0 8px 24px rgba(16,185,129,0.10)'
-                    : state === 'wrong'
-                    ? '0 0 0 4px rgba(239,68,68,0.12)'
-                    : '0 1px 4px rgba(0,0,0,0.06), 0 8px 24px rgba(79,70,229,0.07)',
-                  opacity: s.opacity,
-                  cursor: s.cursor,
-                  transition: 'background 0.3s, border-color 0.3s, opacity 0.4s, box-shadow 0.3s',
+                  boxShadow: shadowMap[state],
+                  opacity: state === 'dim' ? 0.38 : 1,
+                  cursor: isAnswered ? 'default' : 'pointer',
+                  transition: 'background 0.35s, border-color 0.35s, opacity 0.4s, box-shadow 0.35s',
                   userSelect: 'none',
                 }}
               >
                 <span style={{
                   width: 38, height: 38, borderRadius: 10, flexShrink: 0,
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  background: state === 'correct' ? '#10B981' : state === 'wrong' ? '#EF4444' : 'rgba(79,70,229,0.11)',
+                  background: state === 'correct' ? '#059669' : state === 'wrong' ? '#DC2626' : 'rgba(79,70,229,0.11)',
                   color: state === 'correct' || state === 'wrong' ? 'white' : 'var(--primary)',
                   fontFamily: 'var(--font-body)', fontSize: 16, fontWeight: 800,
-                  transition: 'background 0.3s, color 0.3s',
+                  transition: 'background 0.3s',
                 }}>
-                  {state === 'correct' ? '✓' : state === 'wrong' ? '✕' : option.letter}
+                  {state === 'correct' ? '✓' : state === 'wrong' && i === selected ? '✕' : option.letter}
                 </span>
 
                 <span style={{
                   fontFamily: 'var(--font-body)', fontSize: 16,
                   fontWeight: state === 'correct' ? 600 : 400,
-                  color: state === 'correct' ? '#065F46' : state === 'wrong' ? '#7F1D1D' : 'var(--text-secondary)',
+                  color: state === 'correct' ? '#065F46' : state === 'wrong' && i === selected ? '#7F1D1D' : 'var(--text-secondary)',
                   flex: 1, lineHeight: 1.45,
                   transition: 'color 0.3s',
                 }}>
@@ -138,9 +152,9 @@ export default function QuizSlide({ questionNumber, question, options }) {
                   <motion.div
                     initial={{ scale: 0, rotate: -30 }}
                     animate={{ scale: 1, rotate: 0 }}
-                    transition={{ type: 'spring', stiffness: 450, damping: 18, delay: 0.1 }}
+                    transition={{ type: 'spring', stiffness: 450, damping: 18, delay: 0.15 }}
                   >
-                    <CheckCircle2 size={24} color="#10B981" />
+                    <CheckCircle2 size={24} color="#059669" />
                   </motion.div>
                 )}
               </motion.div>
@@ -152,10 +166,10 @@ export default function QuizSlide({ questionNumber, question, options }) {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: selectedIsCorrect ? 0.3 : 0.8, duration: 0.5 }}
+            transition={{ delay: selectedIsCorrect ? 0.35 : 0.85, duration: 0.5 }}
             style={{
-              fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 500,
-              color: selectedIsCorrect ? '#065F46' : '#7F1D1D',
+              fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 600,
+              color: selectedIsCorrect ? '#065F46' : '#991B1B',
               textAlign: 'center',
             }}
           >
