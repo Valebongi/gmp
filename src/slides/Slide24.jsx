@@ -31,7 +31,7 @@ export default function Slide24() {
 
         <motion.div custom={1} variants={itemVariants} initial="hidden" animate="visible" style={{ textAlign: 'center', maxWidth: 820 }}>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(48px,6vw,80px)', color: 'var(--primary)', opacity: 0.12, lineHeight: 0.8, marginBottom: -8 }}>"</div>
-          <p style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(16px,2vw,22px)', fontWeight: 400, color: 'var(--text-primary)', lineHeight: 1.65, fontStyle: 'italic' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px,2.5vw,28px)', fontWeight: 400, color: 'var(--text-primary)', lineHeight: 1.65, fontStyle: 'italic' }}>
             La propuesta no busca únicamente digitalizar procesos, sino transformar el modelo operativo de CONIN en un{' '}
             <span className="gradient-text" style={{ fontStyle: 'normal', fontWeight: 700 }}>sistema integrado</span>,{' '}
             <span style={{ color: 'var(--green)', fontStyle: 'normal', fontWeight: 600 }}>preventivo</span>{' '}
@@ -47,7 +47,7 @@ export default function Slide24() {
           {pillars.map(({ label, bg, border, color }) => (
             <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 8, borderRadius: 100, padding: '8px 20px', background: bg, border: `1px solid ${border}` }}>
               <div style={{ width: 6, height: 6, borderRadius: '50%', background: color, flexShrink: 0 }} />
-              <span style={{ fontFamily: 'var(--font-body)', fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', color }}>{label}</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 700, letterSpacing: '0.1em', color }}>{label}</span>
             </div>
           ))}
         </motion.div>

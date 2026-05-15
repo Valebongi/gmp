@@ -55,7 +55,7 @@ export default function Slide23() {
             >
               <div style={{ height: 3, background: color, borderRadius: '2px 2px 0 0', width: '100%', marginBottom: 14 }} />
               <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px,5vw,58px)', fontWeight: 800, color, lineHeight: 1 }}>{value}</span>
-              <span style={{ fontFamily: 'var(--font-body)', fontSize: 11, color: 'var(--text-muted)', fontWeight: 500, lineHeight: 1.4, textAlign: 'center', maxWidth: 110, marginTop: 8, whiteSpace: 'pre-line' }}>{label}</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)', fontWeight: 500, lineHeight: 1.4, textAlign: 'center', maxWidth: 130, marginTop: 8, whiteSpace: 'pre-line' }}>{label}</span>
             </motion.div>
           ))}
         </motion.div>
@@ -67,8 +67,8 @@ export default function Slide23() {
               <motion.div key={i} custom={7 + i} variants={itemVariants} initial="hidden" animate="visible"
                 style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 10, padding: '8px 14px', boxShadow: 'var(--shadow-card)' }}
               >
-                <CheckCircle2 size={14} color="var(--green)" />
-                <span style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'var(--text-secondary)', fontWeight: 500 }}>{b}</span>
+                <CheckCircle2 size={16} color="var(--green)" />
+                <span style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: 'var(--text-secondary)', fontWeight: 500 }}>{b}</span>
               </motion.div>
             ))}
           </div>

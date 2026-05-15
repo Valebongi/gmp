@@ -86,7 +86,7 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
             animate="visible"
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 13,
+              fontSize: 16,
               fontWeight: 500,
               color: 'var(--text-secondary)',
             }}
@@ -117,20 +117,20 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
               background: colorMap[leftEl.color].bg,
               border: `1px solid ${colorMap[leftEl.color].border}`,
               borderRadius: 16,
-              padding: '20px 24px',
-              minWidth: 200,
-              maxWidth: 240,
+              padding: '24px 30px',
+              minWidth: 220,
+              maxWidth: 270,
             }}
           >
             <div
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 10,
+                fontSize: 11,
                 fontWeight: 600,
                 color: colorMap[leftEl.color].text,
                 letterSpacing: '0.12em',
                 textTransform: 'uppercase',
-                marginBottom: 6,
+                marginBottom: 8,
               }}
             >
               {leftEl.category}
@@ -138,7 +138,7 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
             <div
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 15,
+                fontSize: 18,
                 fontWeight: 700,
                 color: 'var(--text-primary)',
                 lineHeight: 1.4,
@@ -172,20 +172,20 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
               background: colorMap[rightEl.color].bg,
               border: `1px solid ${colorMap[rightEl.color].border}`,
               borderRadius: 16,
-              padding: '20px 24px',
-              minWidth: 200,
-              maxWidth: 240,
+              padding: '24px 30px',
+              minWidth: 220,
+              maxWidth: 270,
             }}
           >
             <div
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 10,
+                fontSize: 11,
                 fontWeight: 600,
                 color: colorMap[rightEl.color].text,
                 letterSpacing: '0.12em',
                 textTransform: 'uppercase',
-                marginBottom: 6,
+                marginBottom: 8,
               }}
             >
               {rightEl.category}
@@ -193,7 +193,7 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
             <div
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 15,
+                fontSize: 18,
                 fontWeight: 700,
                 color: 'var(--text-primary)',
                 lineHeight: 1.4,
@@ -227,8 +227,8 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
               background: 'var(--bg-surface)',
               border: '2px solid var(--blue-border)',
               borderRadius: 16,
-              padding: '20px 28px',
-              maxWidth: 500,
+              padding: '24px 32px',
+              maxWidth: 560,
               textAlign: 'center',
               boxShadow: 'var(--shadow-elevated)',
             }}
@@ -249,7 +249,7 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
             <div
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(14px, 1.8vw, 18px)',
+                fontSize: 'clamp(17px, 2vw, 22px)',
                 fontWeight: 600,
                 color: 'var(--text-primary)',
                 lineHeight: 1.5,

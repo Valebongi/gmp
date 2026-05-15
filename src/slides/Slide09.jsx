@@ -172,9 +172,9 @@ export default function Slide09() {
               >
                 <div
                   style={{
-                    width: 28,
-                    height: 28,
-                    borderRadius: 6,
+                    width: 34,
+                    height: 34,
+                    borderRadius: 8,
                     background: q.dimVar,
                     display: 'flex',
                     alignItems: 'center',
@@ -182,12 +182,12 @@ export default function Slide09() {
                     flexShrink: 0,
                   }}
                 >
-                  <q.Icon size={14} color={q.colorVar} />
+                  <q.Icon size={17} color={q.colorVar} />
                 </div>
                 <span
                   style={{
                     fontFamily: 'var(--font-display)',
-                    fontSize: 13,
+                    fontSize: 16,
                     fontWeight: 700,
                     color: q.colorVar,
                   }}
@@ -229,7 +229,7 @@ export default function Slide09() {
                     <span
                       style={{
                         fontFamily: 'var(--font-body)',
-                        fontSize: 12,
+                        fontSize: 14,
                         color: 'var(--text-secondary)',
                         lineHeight: 1.5,
                       }}

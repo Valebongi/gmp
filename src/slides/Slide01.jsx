@@ -150,7 +150,7 @@ export default function Slide01() {
                 <span
                   style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: 13,
+                    fontSize: 15,
                     color: 'var(--text-secondary)',
                     fontWeight: 500,
                   }}
@@ -162,7 +162,7 @@ export default function Slide01() {
 
             <div style={{ height: 1, background: 'var(--border)', margin: '10px 0' }} />
 
-            <span style={{ fontFamily: 'var(--font-body)', fontSize: 12, color: 'var(--text-muted)' }}>
+            <span style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: 'var(--text-muted)' }}>
               Universidad Tecnológica Nacional
             </span>
           </motion.div>
@@ -192,9 +192,9 @@ export default function Slide01() {
               <div
                 key={label}
                 style={{
-                  padding: '8px 14px',
+                  padding: '9px 16px',
                   fontFamily: 'var(--font-body)',
-                  fontSize: 11,
+                  fontSize: 13,
                   fontWeight: 600,
                   letterSpacing: '0.05em',
                   background: bg,
@@ -214,8 +214,8 @@ export default function Slide01() {
             initial={{ scale: 0.85, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.3, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            width={320}
-            height={300}
+            width={390}
+            height={370}
             viewBox="0 0 320 300"
             fill="none"
           >

@@ -108,7 +108,7 @@ export default function Slide02() {
           animate="visible"
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(13px,1.4vw,15px)',
+            fontSize: 'clamp(15px,1.7vw,18px)',
             color: 'var(--text-secondary)',
             maxWidth: 540,
             textAlign: 'center',
@@ -173,7 +173,7 @@ export default function Slide02() {
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: 11,
+                  fontSize: 13,
                   color: 'var(--text-muted)',
                   fontWeight: 500,
                   lineHeight: 1.4,
@@ -200,8 +200,8 @@ export default function Slide02() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.1, duration: 0.8 }}
-            width={80}
-            height={130}
+            width={110}
+            height={175}
             viewBox="0 0 80 130"
             fill="none"
           >
@@ -240,7 +240,7 @@ export default function Slide02() {
                 <span
                   style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: 13,
+                    fontSize: 15,
                     color: 'var(--text-secondary)',
                     lineHeight: 1.5,
                   }}

@@ -61,12 +61,12 @@ export default function Slide04() {
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <div style={{ width: 34, height: 34, borderRadius: 8, background: 'var(--red-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <Icon size={17} color="var(--red)" />
+                <div style={{ width: 40, height: 40, borderRadius: 10, background: 'var(--red-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <Icon size={20} color="var(--red)" />
                 </div>
-                <span style={{ fontFamily: 'var(--font-display)', fontSize: 13, fontWeight: 700, color: 'var(--text-primary)' }}>{title}</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontSize: 15, fontWeight: 700, color: 'var(--text-primary)' }}>{title}</span>
               </div>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: 11, color: 'var(--text-secondary)', lineHeight: 1.5, marginTop: 7 }}>{desc}</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.5, marginTop: 8 }}>{desc}</p>
               <motion.div
                 animate={{ scale: [1, 1.5, 1], opacity: [0.7, 1, 0.7] }}
                 transition={{ duration: 2, repeat: Infinity, delay: i * 0.5 }}
@@ -84,8 +84,8 @@ export default function Slide04() {
             borderRadius: 12, padding: '12px 18px', width: '100%', maxWidth: 780,
           }}
         >
-          <AlertTriangle size={18} color="var(--red)" style={{ flexShrink: 0, marginTop: 2 }} />
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(12px,1.3vw,14px)', color: '#7F1D1D', fontWeight: 500, lineHeight: 1.5 }}>
+          <AlertTriangle size={22} color="var(--red)" style={{ flexShrink: 0, marginTop: 2 }} />
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(14px,1.5vw,17px)', color: '#7F1D1D', fontWeight: 500, lineHeight: 1.5 }}>
             El resultado: tratamientos interrumpidos, datos perdidos e ineficiencia sistémica que afecta directamente la calidad de atención a los niños.
           </p>
         </motion.div>

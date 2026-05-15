@@ -74,11 +74,11 @@ export default function QuizSlide({ questionNumber, question, options }) {
           animate="visible"
           style={{
             fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(22px, 2.8vw, 36px)',
+            fontSize: 'clamp(26px, 3.2vw, 42px)',
             fontWeight: 700,
             color: 'var(--text-primary)',
             textAlign: 'center',
-            maxWidth: 700,
+            maxWidth: 780,
             lineHeight: 1.3,
             margin: 0,
           }}
@@ -90,9 +90,9 @@ export default function QuizSlide({ questionNumber, question, options }) {
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: 14,
+            gap: 16,
             width: '100%',
-            maxWidth: 680,
+            maxWidth: 800,
           }}
         >
           {options.map((option, i) => (
@@ -120,10 +120,10 @@ export default function QuizSlide({ questionNumber, question, options }) {
                   ? '2px solid var(--green)'
                   : '1px solid var(--red-border)',
                 borderRadius: 12,
-                padding: '14px 18px',
+                padding: '18px 22px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: 12,
+                gap: 14,
                 boxShadow: option.isCorrect
                   ? '0 0 0 3px rgba(16,185,129,0.08), var(--shadow-card)'
                   : 'var(--shadow-card)',
@@ -131,9 +131,9 @@ export default function QuizSlide({ questionNumber, question, options }) {
             >
               <span
                 style={{
-                  width: 28,
-                  height: 28,
-                  borderRadius: 6,
+                  width: 34,
+                  height: 34,
+                  borderRadius: 8,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -143,7 +143,7 @@ export default function QuizSlide({ questionNumber, question, options }) {
                     : 'rgba(239,68,68,0.08)',
                   color: option.isCorrect ? 'white' : 'var(--text-muted)',
                   fontFamily: 'var(--font-body)',
-                  fontSize: 12,
+                  fontSize: 14,
                   fontWeight: 700,
                 }}
               >
@@ -152,7 +152,7 @@ export default function QuizSlide({ questionNumber, question, options }) {
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: 14,
+                  fontSize: 16,
                   fontWeight: option.isCorrect ? 600 : 400,
                   color: option.isCorrect ? 'var(--text-primary)' : 'var(--text-secondary)',
                   flex: 1,

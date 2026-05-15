@@ -94,7 +94,7 @@ export default function Slide03() {
               <span
                 style={{
                   fontFamily: 'var(--font-display)',
-                  fontSize: 13,
+                  fontSize: 15,
                   fontWeight: 700,
                   color: 'var(--text-primary)',
                 }}
@@ -105,7 +105,7 @@ export default function Slide03() {
             <p
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 'clamp(11px,1.2vw,13px)',
+                fontSize: 'clamp(13px,1.5vw,16px)',
                 color: 'var(--text-secondary)',
                 lineHeight: 1.6,
                 margin: 0,
@@ -146,7 +146,7 @@ export default function Slide03() {
               <span
                 style={{
                   fontFamily: 'var(--font-display)',
-                  fontSize: 13,
+                  fontSize: 15,
                   fontWeight: 700,
                   color: 'var(--text-primary)',
                 }}
@@ -157,7 +157,7 @@ export default function Slide03() {
             <p
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 'clamp(11px,1.2vw,13px)',
+                fontSize: 'clamp(13px,1.5vw,16px)',
                 color: 'var(--text-secondary)',
                 lineHeight: 1.6,
                 margin: 0,
@@ -223,12 +223,12 @@ export default function Slide03() {
                 minWidth: 240,
               }}
             >
-              <CheckCircle2 size={14} color="var(--primary)" style={{ flexShrink: 0 }} />
+              <CheckCircle2 size={16} color="var(--primary)" style={{ flexShrink: 0 }} />
               <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                 <span
                   style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: 12,
+                    fontSize: 14,
                     fontWeight: 600,
                     color: 'var(--text-primary)',
                   }}
@@ -241,8 +241,8 @@ export default function Slide03() {
                     background: 'var(--primary-dim)',
                     border: '1px solid rgba(79,70,229,0.15)',
                     borderRadius: 100,
-                    padding: '2px 8px',
-                    fontSize: 10,
+                    padding: '3px 10px',
+                    fontSize: 11,
                     color: 'var(--primary)',
                     fontWeight: 500,
                   }}

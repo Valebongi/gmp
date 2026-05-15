@@ -81,7 +81,7 @@ export default function CAMEStrategySlide({ type, typeName, strategy, actions, I
             animate="visible"
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(14px, 1.6vw, 20px)',
+              fontSize: 'clamp(18px, 2vw, 26px)',
               fontWeight: 700,
               color: 'var(--text-secondary)',
               letterSpacing: '-0.01em',
@@ -99,10 +99,10 @@ export default function CAMEStrategySlide({ type, typeName, strategy, actions, I
             animate="visible"
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 'clamp(13px, 1.4vw, 16px)',
+              fontSize: 'clamp(15px, 1.7vw, 19px)',
               color: 'var(--text-secondary)',
               lineHeight: 1.6,
-              maxWidth: 380,
+              maxWidth: 420,
               margin: 0,
             }}
           >
@@ -115,18 +115,18 @@ export default function CAMEStrategySlide({ type, typeName, strategy, actions, I
             initial="hidden"
             animate="visible"
             style={{
-              width: 48,
-              height: 48,
-              borderRadius: 12,
+              width: 60,
+              height: 60,
+              borderRadius: 14,
               background: 'var(--blue-dim)',
               border: '1px solid var(--blue-border)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              marginTop: 20,
+              marginTop: 24,
             }}
           >
-            {Icon && <Icon size={22} color="var(--blue)" />}
+            {Icon && <Icon size={28} color="var(--blue)" />}
           </motion.div>
         </div>
 
@@ -165,7 +165,7 @@ export default function CAMEStrategySlide({ type, typeName, strategy, actions, I
                   border: '1px solid var(--border)',
                   borderLeft: '4px solid var(--amber)',
                   borderRadius: '0 12px 12px 0',
-                  padding: '12px 16px',
+                  padding: '14px 20px',
                   boxShadow: 'var(--shadow-card)',
                 }}
               >
@@ -182,7 +182,7 @@ export default function CAMEStrategySlide({ type, typeName, strategy, actions, I
                 <span
                   style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: 'clamp(12px, 1.3vw, 14px)',
+                    fontSize: 'clamp(14px, 1.5vw, 17px)',
                     color: 'var(--text-secondary)',
                     lineHeight: 1.5,
                   }}

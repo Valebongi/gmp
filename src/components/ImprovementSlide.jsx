@@ -23,9 +23,9 @@ function ChangeDescriptor({ prefix, text, bg, symbol, symbolColor }) {
     <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
       <div
         style={{
-          width: 22,
-          height: 22,
-          borderRadius: 6,
+          width: 28,
+          height: 28,
+          borderRadius: 7,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -36,7 +36,7 @@ function ChangeDescriptor({ prefix, text, bg, symbol, symbolColor }) {
         <span
           style={{
             color: symbolColor,
-            fontSize: prefix === 'creates' ? 16 : 14,
+            fontSize: prefix === 'creates' ? 19 : 17,
             fontWeight: 700,
             lineHeight: 1,
           }}
@@ -47,7 +47,7 @@ function ChangeDescriptor({ prefix, text, bg, symbol, symbolColor }) {
       <span
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 13,
+          fontSize: 15,
           color: 'var(--text-secondary)',
           lineHeight: 1.5,
         }}
@@ -61,27 +61,27 @@ function ChangeDescriptor({ prefix, text, bg, symbol, symbolColor }) {
 function BeforeAfterDiagram() {
   return (
     <svg
-      viewBox="0 0 320 120"
-      style={{ width: '100%', maxWidth: 320, display: 'block' }}
+      viewBox="0 0 380 150"
+      style={{ width: '100%', maxWidth: 420, display: 'block' }}
     >
-      <rect x="2" y="8"  width="120" height="28" rx="4" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" strokeWidth="1" />
-      <text x="62" y="27" textAnchor="middle" fontSize="10" fill="rgba(239,68,68,0.8)" fontFamily="Inter, sans-serif">Excel</text>
+      <rect x="2" y="10"  width="148" height="36" rx="6" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" strokeWidth="1.2" />
+      <text x="76" y="33" textAnchor="middle" fontSize="13" fill="rgba(239,68,68,0.8)" fontFamily="Inter, sans-serif">Excel</text>
 
-      <rect x="2" y="46" width="120" height="28" rx="4" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" strokeWidth="1" />
-      <text x="62" y="65" textAnchor="middle" fontSize="10" fill="rgba(239,68,68,0.8)" fontFamily="Inter, sans-serif">Papel</text>
+      <rect x="2" y="57" width="148" height="36" rx="6" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" strokeWidth="1.2" />
+      <text x="76" y="80" textAnchor="middle" fontSize="13" fill="rgba(239,68,68,0.8)" fontFamily="Inter, sans-serif">Papel</text>
 
-      <rect x="2" y="84" width="120" height="28" rx="4" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" strokeWidth="1" />
-      <text x="62" y="103" textAnchor="middle" fontSize="10" fill="rgba(239,68,68,0.8)" fontFamily="Inter, sans-serif">Manual</text>
+      <rect x="2" y="104" width="148" height="36" rx="6" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" strokeWidth="1.2" />
+      <text x="76" y="127" textAnchor="middle" fontSize="13" fill="rgba(239,68,68,0.8)" fontFamily="Inter, sans-serif">Manual</text>
 
-      <text x="130" y="42" fontSize="10" fill="rgba(239,68,68,0.5)" fontFamily="Inter, sans-serif">×</text>
-      <text x="130" y="78" fontSize="10" fill="rgba(239,68,68,0.5)" fontFamily="Inter, sans-serif">×</text>
+      <text x="158" y="52" fontSize="13" fill="rgba(239,68,68,0.5)" fontFamily="Inter, sans-serif">×</text>
+      <text x="158" y="96" fontSize="13" fill="rgba(239,68,68,0.5)" fontFamily="Inter, sans-serif">×</text>
 
-      <text x="148" y="66" fontSize="28" fill="var(--amber)" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="300">→</text>
+      <text x="178" y="82" fontSize="34" fill="var(--amber)" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="300">→</text>
 
-      <rect x="196" y="20" width="120" height="80" rx="6" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.5)" strokeWidth="1.5" />
-      <text x="256" y="55" textAnchor="middle" fontSize="10" fill="rgba(16,185,129,0.9)" fontFamily="Inter, sans-serif" fontWeight="600">Sistema</text>
-      <text x="256" y="68" textAnchor="middle" fontSize="10" fill="rgba(16,185,129,0.9)" fontFamily="Inter, sans-serif" fontWeight="600">Unificado</text>
-      <text x="256" y="85" textAnchor="middle" fontSize="14" fill="rgba(16,185,129,0.8)" fontFamily="Inter, sans-serif">✓</text>
+      <rect x="238" y="24" width="138" height="102" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.5)" strokeWidth="1.8" />
+      <text x="307" y="66" textAnchor="middle" fontSize="13" fill="rgba(16,185,129,0.9)" fontFamily="Inter, sans-serif" fontWeight="600">Sistema</text>
+      <text x="307" y="83" textAnchor="middle" fontSize="13" fill="rgba(16,185,129,0.9)" fontFamily="Inter, sans-serif" fontWeight="600">Unificado</text>
+      <text x="307" y="105" textAnchor="middle" fontSize="18" fill="rgba(16,185,129,0.8)" fontFamily="Inter, sans-serif">✓</text>
     </svg>
   )
 }
@@ -310,7 +310,7 @@ export default function ImprovementSlide({
                 <span
                   style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: 13,
+                    fontSize: 15,
                     color: 'var(--primary)',
                     fontWeight: 500,
                     lineHeight: 1.4,
