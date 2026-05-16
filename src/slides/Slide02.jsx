@@ -14,7 +14,7 @@ const itemVariants = {
 const statData = [
   { value: '+100', label: 'centros en Argentina', color: 'var(--primary)' },
   { value: 'ONG', label: 'sin fines de lucro', color: 'var(--green)' },
-  { value: 'Inter-\ndisciplinaria', label: 'atención integral', color: 'var(--blue)' },
+  { value: 'Atención\nIntegral', label: 'Salud + nutrición\ny entorno familiar', color: 'var(--blue)' },
   { value: '+30 años', label: 'del Método CONIN', color: 'var(--amber)' },
 ];
 
@@ -116,8 +116,8 @@ export default function Slide02() {
             margin: 0,
           }}
         >
-          Cooperadora para la Nutrición Infantil. ONG sin fines de lucro dedicada a prevenir y tratar
-          la desnutrición infantil en Argentina mediante atención interdisciplinaria y el Método CONIN.
+          Fundación dedicada a prevenir y tratar la desnutrición infantil mediante un modelo integral
+          que acompaña al niño y su familia durante toda su trayectoria de recuperación.
         </motion.p>
 
         {/* Stat cards */}

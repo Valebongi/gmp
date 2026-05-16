@@ -46,22 +46,6 @@ export default function FODAToCAMESlide({ type, typeLabel, leftEl, rightEl, stra
         }}
       >
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-          <motion.span
-            custom={0}
-            variants={itemVariants}
-            initial="hidden"
-            animate="visible"
-            style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: 10,
-              fontWeight: 600,
-              color: 'var(--text-muted)',
-              letterSpacing: '0.14em',
-              textTransform: 'uppercase',
-            }}
-          >
-            FODA → CAME · CONSTRUCCIÓN DE ESTRATEGIA
-          </motion.span>
           <motion.h1
             custom={1}
             variants={itemVariants}

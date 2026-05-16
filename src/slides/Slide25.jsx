@@ -17,7 +17,7 @@ export default function Slide25() {
           transition={{ delay: 0.1, duration: 1, ease: [0.22, 1, 0.36, 1] }}
           style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(52px,8vw,110px)', fontWeight: 800, letterSpacing: '-0.06em' }}
         >
-          ¿Preguntas?
+          Muchas gracias
         </motion.h1>
 
         <motion.p

@@ -11,17 +11,17 @@ const itemVariants = {
 }
 
 const metrics = [
-  { value: '-40%', label: 'tiempos\nadministrativos', color: 'var(--primary)' },
-  { value: '-25%', label: 'tasa de\nabandono', color: 'var(--amber)' },
-  { value: '100%', label: 'trazabilidad\nde donaciones', color: 'var(--green)' },
-  { value: '+100', label: 'centros\nintegrados', color: 'var(--blue)' },
+  { value: '-40%', label: 'Reducción de tiempos\nadministrativos', color: 'var(--primary)' },
+  { value: '-25%', label: 'Disminución del abandono\ndel tratamiento', color: 'var(--amber)' },
+  { value: '100%', label: 'Trazabilidad nacional\nde donaciones', color: 'var(--green)' },
+  { value: '100%', label: 'de centros\nintegrados', color: 'var(--blue)' },
 ]
 
 const benefits = [
   'Continuidad garantizada del tratamiento',
-  'Visibilidad en tiempo real de stock y recursos',
-  'Reportes de impacto para donantes',
-  'Base para expansión digital de la red nacional',
+  'Decisiones basadas en información en tiempo real',
+  'Transparencia y trazabilidad para donantes',
+  'Integración nacional del modelo CONIN',
 ]
 
 export default function Slide23() {
@@ -38,7 +38,7 @@ export default function Slide23() {
             <span style={{ fontFamily: 'var(--font-body)', fontSize: 10, color: 'var(--primary)', fontWeight: 600, letterSpacing: '0.12em' }}>RESULTADOS ESPERADOS</span>
           </div>
           <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px,3vw,38px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text-primary)' }}>
-            Impacto <span className="gradient-text">organizacional</span>
+            Impacto esperado del <span className="gradient-text">nuevo modelo de gestión</span>
           </h1>
         </motion.div>
 

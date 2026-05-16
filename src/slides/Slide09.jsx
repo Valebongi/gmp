@@ -11,8 +11,8 @@ const quadrants = [
     borderColor: 'rgba(16,185,129,0.15)',
     Icon: Shield,
     items: [
-      'Método CONIN estandarizado (+30 años)',
-      'Atención interdisciplinaria comprobada',
+      'Método CONIN estandarizado con +30 años de aplicación',
+      'Atención interdisciplinaria integral y sostenida',
       'Red nacional de +100 centros de prevención',
     ],
   },
@@ -24,9 +24,9 @@ const quadrants = [
     borderColor: 'rgba(239,68,68,0.15)',
     Icon: AlertTriangle,
     items: [
-      'Uso de planillas Excel aisladas por centro',
-      'Falta de trazabilidad del historial clínico',
-      'Gestión administrativa fragmentada',
+      'Información fragmentada y registros no integrados',
+      'Falta de seguimiento centralizado y trazabilidad del paciente',
+      'Gestión descentralizada de recursos y donaciones',
     ],
   },
   {
@@ -37,9 +37,9 @@ const quadrants = [
     borderColor: 'rgba(16,185,129,0.15)',
     Icon: TrendingUp,
     items: [
-      'Herramientas de digitalización y sistemas cloud',
-      'Uso de datos predictivos para intervención temprana',
-      'Expansión mediante alianzas institucionales',
+      'Herramientas de digitalización para integrar procesos',
+      'Uso de datos sociosanitarios para prevención temprana',
+      'Expansión mediante alianzas y unidad móvil',
     ],
   },
   {
@@ -50,9 +50,9 @@ const quadrants = [
     borderColor: 'rgba(239,68,68,0.15)',
     Icon: Zap,
     items: [
-      'Vulnerabilidad socioeconómica de las familias',
-      'Variabilidad en donaciones y contexto económico',
-      'Desconexión institucional entre centros',
+      'Vulnerabilidad socioeconómica y falta de servicios básicos',
+      'Variabilidad económica y de donaciones',
+      'Riesgo de recaída por contextos familiares no resueltos',
     ],
   },
 ];
@@ -118,7 +118,7 @@ export default function Slide09() {
             }}
           >
             Diagnóstico{' '}
-            <span className="gradient-text">estratégico</span>
+            <span className="gradient-text">FODA</span>
           </h1>
         </motion.div>
 

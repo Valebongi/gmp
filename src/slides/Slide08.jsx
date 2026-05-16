@@ -4,12 +4,12 @@ export default function Slide08() {
   return (
     <QuizSlide
       questionNumber={4}
-      question="¿Qué amenaza afectaba la continuidad del tratamiento en CONIN?"
+      question="¿Qué amenaza pone en riesgo la continuidad del tratamiento en CONIN?"
       options={[
-        { letter: 'A', text: 'Exceso de digitalización en el sector', isCorrect: false },
-        { letter: 'B', text: 'Exceso de profesionales disponibles', isCorrect: false },
-        { letter: 'C', text: 'Variabilidad en las donaciones y el contexto económico que limita la disponibilidad de recursos', isCorrect: true },
-        { letter: 'D', text: 'Exceso de financiamiento externo', isCorrect: false },
+        { letter: 'A', text: 'Incremento de costos operativos entre centros', isCorrect: false },
+        { letter: 'B', text: 'Falta de interoperabilidad con hospitales', isCorrect: false },
+        { letter: 'C', text: 'Variabilidad económica y de donaciones', isCorrect: true },
+        { letter: 'D', text: 'Desigualdad en la distribución de recursos territoriales', isCorrect: false },
       ]}
     />
   );

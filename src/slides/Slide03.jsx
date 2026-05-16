@@ -111,9 +111,8 @@ export default function Slide03() {
                 margin: 0,
               }}
             >
-              Prevenir y tratar la desnutrición infantil mediante un abordaje integral que incluya
-              asistencia nutricional, atención de la salud, educación y acompañamiento familiar,
-              contribuyendo al desarrollo saludable de los niños.
+              Prevenir y tratar la desnutrición infantil mediante un abordaje integral:
+              nutrición, salud, educación y acompañamiento familiar.
             </p>
           </div>
 
@@ -163,9 +162,8 @@ export default function Slide03() {
                 margin: 0,
               }}
             >
-              Ser la organización de referencia en Argentina en la erradicación de la desnutrición
-              infantil, logrando que cada niño acceda a condiciones de desarrollo pleno en sus
-              primeros años en igualdad de oportunidades.
+              Ser la organización de referencia en Argentina en la prevención de la desnutrición
+              infantil, con un modelo integral, sostenible y replicable centrado en el niño y su entorno.
             </p>
           </div>
         </motion.div>

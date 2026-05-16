@@ -5,9 +5,9 @@ export default function Slide11() {
     <FODAToCAMESlide
       type="DO"
       typeLabel="Reorientación"
-      leftEl={{ label: 'Uso de planillas Excel aisladas y gestión fragmentada', category: 'Debilidad', color: 'red' }}
-      rightEl={{ label: 'Herramientas de digitalización que mejoran eficiencia operativa', category: 'Oportunidad', color: 'green' }}
-      strategy="Digitalizar y unificar los registros de admisión, seguimiento y egreso de pacientes, eliminando los sistemas fragmentados y reemplazándolos por una plataforma integrada."
+      leftEl={{ label: 'Información fragmentada y registros no integrados', category: 'Debilidad', color: 'red' }}
+      rightEl={{ label: 'Herramientas de digitalización para integrar admisión, seguimiento y egreso.', category: 'Oportunidad', color: 'green' }}
+      strategy="Implementar una Historia Clínica Digital Unificada interoperable que integre admisión, seguimiento y egreso en una única plataforma."
     />
   )
 }
