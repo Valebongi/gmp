@@ -54,7 +54,7 @@ export default function Slide24() {
 
         <motion.div custom={4} variants={itemVariants} initial="hidden" animate="visible">
           <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)', textAlign: 'center', letterSpacing: '0.06em' }}>
-            UTN · Universidad Tecnológica Nacional · 2025
+            UTN · Universidad Tecnológica Nacional · 2026
           </p>
         </motion.div>
       </div>

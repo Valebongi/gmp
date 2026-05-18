@@ -67,7 +67,7 @@ export default function Slide01() {
                 fontWeight: 600,
               }}
             >
-              GESTIÓN DE MEJORA DE PROCESOS · UTN · 2025
+              GESTIÓN DE MEJORA DE PROCESOS · UTN · 2026
             </span>
           </motion.div>
 
@@ -138,7 +138,7 @@ export default function Slide01() {
           >
             <div style={{ height: 1, width: 32, background: 'var(--border-strong)' }} />
             <span style={{ fontFamily: 'var(--font-body)', fontSize: 14, color: 'var(--text-muted)', fontWeight: 500 }}>
-              Universidad Tecnológica Nacional · 2025
+              Universidad Tecnológica Nacional · Grupo 3 · 2026
             </span>
           </motion.div>
 
