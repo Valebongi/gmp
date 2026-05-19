@@ -62,8 +62,8 @@ export default function SlideEstrategia1() {
             fontFamily: 'var(--font-body)', fontSize: 'clamp(13px,1.4vw,16px)',
             color: 'var(--text-secondary)', lineHeight: 1.65, margin: 0, maxWidth: 820,
           }}>
-            Implementar una Historia Clínica Digital Unificada interoperable que integre admisión,
-            seguimiento y egreso en una única plataforma.
+            Desarrollar un sistema de gestión integral basado en los protocolos del Método CONIN,
+            digitalizando los procesos y garantizando trazabilidad en tiempo real.
           </p>
         </motion.div>
 
