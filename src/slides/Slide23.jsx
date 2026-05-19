@@ -13,8 +13,8 @@ const itemVariants = {
 const metrics = [
   { value: '-40%', label: 'Reducción de tiempos\nadministrativos', color: 'var(--primary)' },
   { value: '-25%', label: 'Disminución del abandono\ndel tratamiento', color: 'var(--amber)' },
-  { value: '100%', label: 'Trazabilidad nacional\nde donaciones', color: 'var(--green)' },
-  { value: '100%', label: 'de centros\nintegrados', color: 'var(--blue)' },
+  { value: '100%', label: 'Trazabilidad\nde donaciones', color: 'var(--green)' },
+  { value: '100%', label: 'de centros integrados\na nivel nacional', color: 'var(--blue)' },
 ]
 
 const benefits = [

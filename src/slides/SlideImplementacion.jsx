@@ -82,13 +82,13 @@ export default function SlideImplementacion() {
             transition={{ delay: 0.9, duration: 0.5 }}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}
           >
-            <div style={{ fontFamily: 'var(--font-body)', fontSize: 10, fontWeight: 600, color: 'var(--text-muted)', letterSpacing: '0.1em' }}>GENERA</div>
+            <div style={{ fontFamily: 'var(--font-body)', fontSize: 10, fontWeight: 600, color: 'var(--text-muted)', letterSpacing: '0.1em' }}>SELECCIONAMOS</div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 44, color: 'var(--amber)', lineHeight: 1 }}>→</div>
           </motion.div>
 
           {/* Actions side */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            <div style={{ fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.12em', marginBottom: 4 }}>ACCIONES DE MEJORA</div>
+            <div style={{ fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.12em', marginBottom: 4 }}>ESTRATEGIAS DE MEJORA</div>
             {actions.map((a, i) => (
               <motion.div
                 key={a.num}
